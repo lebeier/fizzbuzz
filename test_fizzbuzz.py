@@ -12,3 +12,7 @@ def test_should_return_Buzz():
   fizzbuzz= FizzBuzz()
   assert fizzbuzz.run(5) == "Buzz"
 
+def test_should_return_FizzBuzz():
+  fizzbuzz= FizzBuzz()
+  assert fizzbuzz.run(15) == "FizzBuzz"
+
