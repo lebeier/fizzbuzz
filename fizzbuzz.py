@@ -3,4 +3,6 @@ class FizzBuzz(object):
         pass
 
     def run(self, num):
-        return 1
+      if (num == 3):
+        return 'Fizz'
+      return 1

@@ -1,10 +1,14 @@
 from fizzbuzz import *
 
-def test_hello():
+def test_should_return_one():
   fizzbuzz= FizzBuzz()
   assert fizzbuzz.run(1) == 1
 
-def test_three():
+def test_should_return_Fizz():
   fizzbuzz= FizzBuzz()
   assert fizzbuzz.run(3) == "Fizz"
+
+def test_should_return_Buzz():
+  fizzbuzz= FizzBuzz()
+  assert fizzbuzz.run(5) == "Buzz"
 
