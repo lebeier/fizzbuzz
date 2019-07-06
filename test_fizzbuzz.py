@@ -4,6 +4,10 @@ def test_should_return_one():
   fizzbuzz= FizzBuzz()
   assert fizzbuzz.run(1) == 1
 
+def test_should_return_two():
+  fizzbuzz= FizzBuzz()
+  assert fizzbuzz.run(2) == 2
+
 def test_should_return_Fizz():
   fizzbuzz= FizzBuzz()
   assert fizzbuzz.run(3) == "Fizz"

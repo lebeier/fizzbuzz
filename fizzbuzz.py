@@ -7,4 +7,6 @@ class FizzBuzz(object):
       return 'Fizz'
     elif num == 5:
       return 'Buzz'
+    elif num == 15:
+      return 'FizzBuzz'
     return 1
