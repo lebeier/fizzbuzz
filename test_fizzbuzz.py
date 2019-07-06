@@ -28,9 +28,15 @@ def test_should_return_FizzBuzz():
 
 def test_should_return_10_Buzz():
     fizzbuzz = FizzBuzz()
-    assert fizzbuzz.run_sequence(10) == ['FizzBuzz', 1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz']
+    assert fizzbuzz.run_sequence(
+        10) == ['FizzBuzz', 1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz']
 
-def test_new_requirement():
+
+def test_should_return_Fizz_when_contains_three():
     fizzbuzz = FizzBuzz()
-    assert fizzbuzz.run(13) == 'Fizz' 
-    assert fizzbuzz.run(51) == 'Buzz' 
+    assert fizzbuzz.run(13) == 'Fizz'
+
+
+def test_should_return_Buzz_when_contains_five():
+    fizzbuzz = FizzBuzz()
+    assert fizzbuzz.run(51) == 'FizzBuzz'
