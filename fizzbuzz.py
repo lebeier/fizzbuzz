@@ -2,13 +2,21 @@ class FizzBuzz(object):
     def __init__(self):
         pass
 
+    def _is_fizz(self, num):
+        return num % 3 == 0 
+
+    def _is_buzz(self, num):
+        return num % 5 == 0
+
     def run(self, num):
-        if num == 3:
-            return 'Fizz'
-        elif num == 15:
-            return 'FizzBuzz'
-        elif num % 5 == 0:
-            return 'Buzz'
+        result = '' 
+        if self._is_fizz(num):
+            result += 'Fizz'
+        if self._is_buzz(num):
+            result += 'Buzz'
+
+        if result:
+          return result
         return num
 
     def run_sequence(self, max):
